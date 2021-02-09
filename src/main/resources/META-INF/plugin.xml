@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>org.oberdiah.classplane</id>
+    <name>ClassPlane</name>
+    <vendor email="richardjmullender@gmail.com">Richard Mullender</vendor>
+
+    <description><![CDATA[
+<p>Enables you to view and edit every one of your classes from a single viewport.</p>
+<p><strong>Note: This is plugin is experimental and some features may be broken or missing.</strong></p>
+<p><strong>Usage Instructions:</strong></p>
+<ul>
+<li>When the plugin is installed there should be a new tab on the right sidebar named ClassPlane.</li>
+<li>Ctrl + Scroll wheel to zoom in and out.</li>
+<li>Click the scroll wheel in and drag to pan around, or simply scroll to pan vertically.</li>
+<li>Click and drag the header of a class to move it around.</li>
+<li>Zoom fully in to edit code by hovering over it with the mouse and editing it as normal.</li>
+<li>When not fully zoomed in, click on a class to select it. From here you may click and drag from the circle with an arrow to another class to add an 'extends' relationship between them. Do it again to remove the relationship.</li>
+</ul>
+<p>There is also a tutorial that activates when the plugin is first installed, if desired.</p>
+    ]]></description>
+
+    <change-notes>Bugfixes</change-notes>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="ClassPlane" secondary="false" icon="AllIcons.General.Modified" anchor="right"
+                    factoryClass="main.core.MyToolWindowFactory"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
