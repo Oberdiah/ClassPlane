@@ -48,5 +48,5 @@ intellij {
 }
 patchPluginXml {
     // changeNotes """Initial release of the plugin."""
-
+    untilBuild = '2011.1.1'
 }
